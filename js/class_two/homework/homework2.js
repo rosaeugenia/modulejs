@@ -140,9 +140,9 @@ switch (dia) {
 
 let nombre = window.prompt('¿Cual es tu nombre?)')
 
-var ultimaLetra = nombre.length - 1
+var ultimaLetra = nombre.charAt(nombre.length - 1).toLowerCase()
 
-ultimaLetra == "a" || ultimaLetra == 'e' || ultimaLetra == 'i' || ultimaLetra == 'o', ultimaLetra == 'u' ? console.log(`Tu nombre ${nombre} termina en vocal, tu nombre termina con ${ultimaLetra}`) : console.log(`Tu nombre termina en consonante`)
+ultimaLetra == "a" || ultimaLetra == 'e' || ultimaLetra == 'i' || ultimaLetra == 'o' || ultimaLetra == 'u' ? console.log(`Tu nombre ${nombre} termina en vocal, tu nombre termina con ${ultimaLetra}`) : console.log(`Tu nombre termina en consonante`)
 
 
 
@@ -153,8 +153,9 @@ ultimaLetra == "a" || ultimaLetra == 'e' || ultimaLetra == 'i' || ultimaLetra ==
  * P.ej: juan
  * -> NAUJ
  */
-/*let nombre = window.prompt('¿Cual es tu nombre?)')*/
-
+let nombre = window.prompt('¿Cual es tu nombre?)')
+var reves = nombre.split('').reverse().join()
+console.log(reves.toUpperCase())
 
 
 /**
@@ -167,7 +168,8 @@ ultimaLetra == "a" || ultimaLetra == 'e' || ultimaLetra == 'i' || ultimaLetra ==
  * -> "Kodemia Kodemia Kodemia Kodemia"
  */
 
-/*let palabra = window.prompt('Escribe una palabra)')
-const suma = parseInt(window.prompt('Escribe el un número entre 1 y 10'))
-suma
-console.log(`${palabra}`)*/
+let palabra = window.prompt("Escribe una palabra")
+const multi = parseInt(window.prompt('Escribe el un número entre 1 y 10'))
+
+let palabraRepetir = palabra.repeat(multi)
+console.log("palabraRepetir" + ' ')
