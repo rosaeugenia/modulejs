@@ -172,4 +172,4 @@ let palabra = window.prompt("Escribe una palabra")
 const multi = parseInt(window.prompt('Escribe el un número entre 1 y 10'))
 
 let palabraRepetir = palabra.repeat(multi)
-console.log("palabraRepetir" + ' ')
+console.log("palabraRepetir")
