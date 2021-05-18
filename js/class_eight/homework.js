@@ -65,3 +65,16 @@ console.log(platillos([
     ['ensalada simple', 'enchiladas', 'yogurt', 80],
     ['ensalada cesar', 'salmón', 'platano', 100],
 ]))
+
+const response = pedidos.filter((cv, index, arr) => {
+    if (cv[1] === 'paella') {
+        return cv
+    }
+}, 0).length
+const response = pedidos.reduce((acc, cv) => {
+    if (cv[1] === 'paella') {
+        return acc = acc + 1
+    } else {
+        return acc
+    }
+}, 0)
