@@ -38,12 +38,12 @@ request.addEventListener('readystatechange', () => {
             const response = request
             const objectResponse = JSON.parse(response.responseText)
 
-            printPosts(objectRespconsole.log(objectResponse) onse)
+            printPosts(objectRespconsole.log(objectResponse))
         } else {
             console.log('No se pudo ejecutar')
         }
     }
 })
-request.send() * /
+request.send()
 
 //*************************************************************
